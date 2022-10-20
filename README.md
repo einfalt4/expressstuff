@@ -47,7 +47,9 @@ The following images show the web application's appearance and functionality:
 ## Credits
 
 By: Randy Einfalt
+
 Github: https://github.com/einfalt4/expressstuff
+
 Heroku deployed app: https://notetakerstuff.herokuapp.com/notes
 
 
