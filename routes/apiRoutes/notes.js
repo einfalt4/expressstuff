@@ -14,7 +14,7 @@ router.post('/notes', (req, res) => {
     console.log(pushNotes);
     console.log(req.body);
     data.unshift(pushNotes);
-    fs.writeFile('./db/db.json', JSON.stringify(data), (err, data) => {
+    fs.writeFile('../../db/db.json', JSON.stringify(data), (err, data) => {
         if (err) throw err
     });
     res.json(data);
@@ -25,7 +25,7 @@ router.delete('/notes/:id', (req, res) => {
     const writtenNotes = notes.filter((note) => {
         return note.id !== id;
     })
-    fs.writeFile('./db/db.json', JSON.stringify(writtenNotes), (err, data) => {
+    fs.writeFile('../../db/db.json', JSON.stringify(writtenNotes), (err, data) => {
         if (err) throw err
     });
     res.json(writtenNotes);
